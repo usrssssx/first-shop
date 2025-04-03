@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width='device-width', initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="product.css">
+        <title>HAUSTED SHOP | Интернет Магазин Одежды</title>
+    </head>
+    <body>
+        <nav>
+        <ul class="nav-links">
+            <li class="link"><a href="index.html">Главная страница</a></li>
+            <li class="link"><a href="category.html">Категория</a></li>
+            <li class="link"><a href="contact.html">Контакты</a></li>
+            <li class="link"><a href="index.html">Отзывы</a></li>
+        </ul>
+        <button class="btn">Корзина</button>
+        </nav>
+        <div class="product">
+            <div class="product-logo">
+                <img src="images/shirt/shirt1/1.jpg" class="product-image">
+            </div>
+            <div class="product-text">
+                <h1>Футболка с принтом</h1>
+            </div>
+            <div class="product-price">
+                <h1> 1 599 Р.</h1>
+            </div>
+            <div class="product-size">
+                <h1>Размер:</h1>
+            </div>
+            <button class="btn-cart">Добавить в корзину</button>
+            <div class="product-description">
+                <h1>Описание</h1>
+                <p style="font-size: 17px; color: #777">Футболка с принтом</p>
+                <p style="font-size: 16px; color: #777">- Свободный силуэт<br>- Джерси<br>- Короткий рукав<br>- Круглый вырез горловины<br>- Принт</p>
+            </div>
+        </div>
+        <div class="footer">
+            <nav>
+            <div class="nav-footer">
+                <li class="links"><a href="category.html">Категория</a></li>
+                <li class="links"><a href="index.html">Помощь</a></li>
+            </div>
+        </nav>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+
+
+
+
+        <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
+
+<div class="smart-basket__wrapper"></div>
+
+<script src="./smartbasket/js/smartbasket.min.js"></script>
+
+	<script>
+		$(function () {
+			$('.smart-basket__wrapper').smbasket({
+				productElement: 'клас обвертки карточки товара',
+				buttonAddToBasket: 'клас кнопки купить',
+				productPrice: 'product__price-number',
+				productSize: 'product__size-element',
+				
+				productQuantityWrapper: 'product__quantity',
+				smartBasketMinArea: 'класс корзины',
+				countryCode: '+7',
+				smartBasketCurrency: '₽',
+				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
+
+				agreement: {
+					isRequired: true,
+					isChecked: true,
+					isLink: 'https://artstranger.ru/privacy.html',
+				},
+				nameIsRequired: false,
+			});
+		});
+	</script>
+    </body>
+</html>

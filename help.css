@@ -1,0 +1,78 @@
+.header-help{
+    margin: 40px auto;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    padding-bottom: 2rem;
+    background:url(images/help.jpg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem;
+    width: 1500px;
+    height: 600px;
+    border-radius: 2rem;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.help-text{
+    color: white;
+    text-align: center;
+    margin-top: 180px;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 40px;
+}
+
+
+.spoiler{
+  margin:0 auto;
+}
+
+details{
+    display: block;
+    background: #fff;
+    width: 400px;
+    box-shadow: 0 10px 15px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow:hidden;
+    margin: 0 auto 50px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::-moz-list-bullet{list-style-type:none;}
+  summary::marker{display:none;} 
+  summary {
+     display:block;
+     font-size:1.4em;
+     cursor: pointer;
+     position: relative;
+     padding: .3em .3em .3em 1.4em;
+     border-bottom: 1px solid #e2e8f0;
+  }
+  summary:before {  
+    top: .4em;
+    left: .3em;
+    color: transparent;
+    background: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+    width: 1em;
+    height: 1em;  
+    content: "";
+    position: absolute;
+    transition: transform .5s;
+  }
+  details[open] > summary:before {
+    transform: rotateZ(90deg);
+  }
+  summary ~ * {
+     padding: 0 2em 10px 2em;
+  }
+  details[open] summary ~ *{ 
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+  }
+  summary:focus {
+    outline:0;
+    box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+  }
